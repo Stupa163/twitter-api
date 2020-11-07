@@ -1,2 +1,4 @@
 mkdir files
-echo '[]' > files/tweets.json
+if [ ! -f files/tweets.json ]; then
+  echo '[]' > files/tweets.json
+fi
